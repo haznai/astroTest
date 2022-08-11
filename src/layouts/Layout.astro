@@ -1,9 +1,12 @@
 ---
+import logo from "/assets/hazn_logo.svg"
+
 export interface Props {
     title: string;
 }
 
 const { title } = Astro.props as Props;
+
 ---
 
 <!DOCTYPE html>
@@ -18,7 +21,13 @@ const { title } = Astro.props as Props;
 </head>
 
 <body>
-    <slot />
+<div class="flex flex-col justify-center h-screen ml-[3%] mr-[3%] border-r-2 border-l-2 border-black">
+<div class="container mx-auto">
+    <header class="h-[60px] w-screen bg-slate-300 border-b-2 border-black">
+        <img class="relative h-[100px] left-[8px] top-[11px]  " src={logo} alt="Logo of my nickname: hazn"> 
+    </header>
+</div>
+</div>
 </body>
 
 </html>
