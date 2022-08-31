@@ -1,8 +1,8 @@
 ---
 import logo from "/assets/hazn_logo.svg";
 import sparkles from "/assets/sparkles.svg";
-import "@fontsource/source-sans-pro";
-import "@fontsource/source-serif-pro";
+import "@fontsource/source-sans-3";
+import "@fontsource/source-serif-4";
 
 export interface Props {
     title: string;
@@ -22,10 +22,12 @@ const { title } = Astro.props as Props;
     </head>
 
     <body>
-        <div class="bg-white max-w-5xl mx-auto">
-            <header class="pb-2">
+        <div
+            class="bg-white max-w-5xl mx-auto md:border-x-[1px] border-b-[1px] border-black min-h-screen"
+        >
+            <header class="pb-2 md:pb-4">
                 <div
-                    class="flex justify-between md:gap-5 h-12 md:h-16 mx-auto border-b-[1px] md:border-x-[1px] border-black"
+                    class="flex justify-between md:gap-5 h-12 md:h-16 mx-auto border-b-[2px] border-black"
                 >
                     <!-- hazn logo -->
                     <img
@@ -34,17 +36,20 @@ const { title } = Astro.props as Props;
                         alt="Logo of my nickname: hazn"
                     />
                     <!-- as above, so below -->
-                    <div class="flex pr-1 md:pr-4 gap-1">
-                        <span
-                            class="flex-initial place-self-center font-sans text-sm md:text-lg"
-                            >as above, so below
-                        </span>
+                    <div
+                        class="inline-flex flex-row-reverse gap-1 pr-4 md:pr-6"
+                    >
                         <!-- sparkles emoji -->
                         <img
                             class="flex-initial place-self-center h-[75%]"
                             src={sparkles}
                             alt="Logo of my nickname: hazn"
                         />
+
+                        <span
+                            class="flex-none font-serif w-fit text-sm md:text-lg place-self-center"
+                            >as above, so below
+                        </span>
                     </div>
                 </div>
             </header>
