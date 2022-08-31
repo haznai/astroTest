@@ -12,5 +12,9 @@
   "devDependencies": {
     "@astrojs/tailwind": "^1.0.0",
     "astro": "^1.0.1"
+  },
+  "dependencies": {
+    "@fontsource/source-sans-pro": "^4.5.11",
+    "@fontsource/source-serif-pro": "^4.5.9"
   }
 }
