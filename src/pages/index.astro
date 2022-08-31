@@ -3,17 +3,11 @@ import Layout from "../layouts/Layout.astro";
 import Section from "../components/section.astro";
 ---
 
-<Layout title="Hasan Atak's homepage"><Section header="About me" /></Layout>
+<Layout title="Hasan Atak's homepage">
+    <div class="pt-5 md:pt-3">
+        <Section header="About me" />
+    </div>
+</Layout>
+<style global>
 
-<style is:global>
-    @tailwind utilities;
-
-    @layer utilities {
-        .animation-delay-2000 {
-            animation-delay: 2000ms;
-        }
-        .animation-delay-4000 {
-            animation-delay: 4000ms;
-        }
-    }
 </style>
