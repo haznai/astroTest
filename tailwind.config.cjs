@@ -7,6 +7,11 @@ module.exports = {
       serif:
         'Source\\ Serif\\ 4, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif',
     },
+	borderWidth: {
+		'sm': '.0625rem',
+		'md': '0.125rem',
+		'lg': '0.2rem',
+	},
     extend: {},
   },
   plugins: [],
